@@ -227,6 +227,8 @@
 	});
 
 	let transition = fadeInDuration > 0 ? `opacity ${fadeInDuration}ms` : undefined;
+
+	$: console.log('showImage', showImage);
 </script>
 
 <IntersectionObserver
@@ -241,7 +243,7 @@
 		style:overflow="hidden"
 		style:position={style.position ?? layout === 'fill' ? 'absolute' : 'relative'}
 		style:width={style.width ?? layout === 'fixed' ? data.width : '100%'}
-		style:maxWidth={style.maxWidth ?? layout === 'intrinsic' ? data.width : null}
+		style:max-width={style.maxWidth ?? layout === 'intrinsic' ? data.width : null}
 		style:height={style.height ?? layout === 'fill' ? '100%' : null}
 		data-testid="image"
 	>
@@ -261,7 +263,7 @@
 		{/if}
 
 		{#if addImage}
-			<picture style={pictureStyle} data-testid="picture">
+			<picture data-testid="picture">
 				{#if data.webpSrcSet}
 					<Source srcset={data.webpSrcSet} sizes={sizes ?? data.sizes ?? null} type="image/webp" />
 				{/if}
@@ -283,6 +285,7 @@
 							loaded = true;
 						}}
 						class={pictureClass}
+						style={pictureStyle}
 						style:opacity={showImage ? 1 : 0}
 						style:transition
 						style:position="absolute"
@@ -290,8 +293,8 @@
 						style:top="0"
 						style:width="100%"
 						style:height="100%"
-						style:objectFit
-						style:objectPosition
+						style:object-fit={objectFit}
+						style:object-position={objectPosition}
 						data-testid="img"
 					/>
 				{/if}

@@ -1,0 +1,72 @@
+{
+  "name": "@datocms/svelte",
+  "version": "1.1.1",
+  "description": "A set of components and utilities to work faster with DatoCMS in Svelte",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datocms/datocms-svelte.git"
+  },
+  "author": "Silvano Stralla <silvano@datocms.com>",
+  "homepage": "https://github.com/datocms/datocms-svelte",
+  "keywords": [
+    "svelte",
+    "datocms"
+  ],
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^1.0.0",
+    "@sveltejs/kit": ">=1.15.2",
+    "@sveltejs/package": "^1.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/svelte": "^3.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "csstype": "^3.1.1",
+    "datocms-structured-text-generic-html-renderer": "^2.0.4",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "jsdom": "^21.1.0",
+    "jsdom-testing-mocks": "^1.7.0",
+    "prettier": "^2.8.0",
+    "prettier-plugin-svelte": "^2.8.1",
+    "svelte": "^3.54.0",
+    "svelte-check": "^3.0.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vitest": "^0.25.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "datocms-structured-text-utils": "^2.0.4",
+    "svelte-intersection-observer": "^0.10.0",
+    "universal-base64": "^2.1.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./components/Head/Head.svelte": "./components/Head/Head.svelte",
+    "./components/Head/README.md": "./components/Head/README.md",
+    "./components/Image/Image.svelte": "./components/Image/Image.svelte",
+    "./components/Image/Placeholder.svelte": "./components/Image/Placeholder.svelte",
+    "./components/Image/README.md": "./components/Image/README.md",
+    "./components/Image/Sizer.svelte": "./components/Image/Sizer.svelte",
+    "./components/Image/Source.svelte": "./components/Image/Source.svelte",
+    "./components/StructuredText/Node.svelte": "./components/StructuredText/Node.svelte",
+    "./components/StructuredText/README.md": "./components/StructuredText/README.md",
+    "./components/StructuredText/StructuredText.svelte": "./components/StructuredText/StructuredText.svelte",
+    "./components/StructuredText/nodes/Blockquote.svelte": "./components/StructuredText/nodes/Blockquote.svelte",
+    "./components/StructuredText/nodes/Code.svelte": "./components/StructuredText/nodes/Code.svelte",
+    "./components/StructuredText/nodes/Heading.svelte": "./components/StructuredText/nodes/Heading.svelte",
+    "./components/StructuredText/nodes/Link.svelte": "./components/StructuredText/nodes/Link.svelte",
+    "./components/StructuredText/nodes/List.svelte": "./components/StructuredText/nodes/List.svelte",
+    "./components/StructuredText/nodes/ListItem.svelte": "./components/StructuredText/nodes/ListItem.svelte",
+    "./components/StructuredText/nodes/Paragraph.svelte": "./components/StructuredText/nodes/Paragraph.svelte",
+    "./components/StructuredText/nodes/Root.svelte": "./components/StructuredText/nodes/Root.svelte",
+    "./components/StructuredText/nodes/Span.svelte": "./components/StructuredText/nodes/Span.svelte",
+    "./components/StructuredText/nodes/ThematicBreak.svelte": "./components/StructuredText/nodes/ThematicBreak.svelte",
+    "./components/StructuredText/utils/Lines.svelte": "./components/StructuredText/utils/Lines.svelte",
+    ".": "./index.js"
+  },
+  "svelte": "./index.js"
+}
