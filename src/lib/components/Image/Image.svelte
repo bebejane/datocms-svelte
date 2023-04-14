@@ -63,7 +63,7 @@
 		const isIntersectionObserverAvailable = isWindowDefined
 			? !!(window as any).IntersectionObserver
 			: false;
-		console.log('check', lazyLoad);
+
 		if (!lazyLoad) {
 			return true;
 		}

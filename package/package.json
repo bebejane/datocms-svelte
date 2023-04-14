@@ -43,6 +43,7 @@
     "svelte-intersection-observer": "^0.10.0",
     "universal-base64": "^2.1.0"
   },
+  "main": "./package/index.js",
   "exports": {
     "./package.json": "./package.json",
     "./components/Head/Head.svelte": "./components/Head/Head.svelte",

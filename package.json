@@ -4,15 +4,15 @@
 	"description": "A set of components and utilities to work faster with DatoCMS in Svelte",
 	"license": "MIT",
 	"repository": {
-    "type": "git",
-    "url": "git://github.com/datocms/datocms-svelte.git"
-  },
-  "author": "Silvano Stralla <silvano@datocms.com>",
-  "homepage": "https://github.com/datocms/datocms-svelte",
+		"type": "git",
+		"url": "git://github.com/datocms/datocms-svelte.git"
+	},
+	"author": "Silvano Stralla <silvano@datocms.com>",
+	"homepage": "https://github.com/datocms/datocms-svelte",
 	"keywords": [
 		"svelte",
 		"datocms"
-  ],
+	],
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-kit sync && svelte-package",
@@ -53,5 +53,6 @@
 		"datocms-structured-text-utils": "^2.0.4",
 		"svelte-intersection-observer": "^0.10.0",
 		"universal-base64": "^2.1.0"
-	}
+	},
+	"main": "./package/index.js"
 }

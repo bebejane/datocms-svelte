@@ -16,7 +16,6 @@ const imageAddStrategy = ({ lazyLoad, intersecting, loaded }) => {
 };
 const imageShowStrategy = ({ lazyLoad, loaded }) => {
   const isIntersectionObserverAvailable = isWindowDefined ? !!window.IntersectionObserver : false;
-  console.log("check", lazyLoad);
   if (!lazyLoad) {
     return true;
   }
