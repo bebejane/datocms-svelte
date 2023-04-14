@@ -9,7 +9,7 @@
 	export let fadeInDuration = 0;
 
 	let transition = fadeInDuration > 0 ? `opacity ${fadeInDuration}ms` : undefined;
-	let opacity = showImage ? 0 : 1;
+	let opacity = showImage ? 1 : 0;
 </script>
 
 <img

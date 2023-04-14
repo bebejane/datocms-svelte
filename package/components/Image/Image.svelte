@@ -16,6 +16,7 @@ const imageAddStrategy = ({ lazyLoad, intersecting, loaded }) => {
 };
 const imageShowStrategy = ({ lazyLoad, loaded }) => {
   const isIntersectionObserverAvailable = isWindowDefined ? !!window.IntersectionObserver : false;
+  console.log("check", lazyLoad);
   if (!lazyLoad) {
     return true;
   }
@@ -99,7 +100,7 @@ $:
   });
 let transition = fadeInDuration > 0 ? `opacity ${fadeInDuration}ms` : void 0;
 $:
-  console.log("showImage", showImage);
+  console.log("showImages", showImage, loaded);
 </script>
 
 <IntersectionObserver

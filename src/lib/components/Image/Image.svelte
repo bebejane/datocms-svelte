@@ -63,7 +63,7 @@
 		const isIntersectionObserverAvailable = isWindowDefined
 			? !!(window as any).IntersectionObserver
 			: false;
-
+		console.log('check', lazyLoad);
 		if (!lazyLoad) {
 			return true;
 		}
@@ -227,8 +227,6 @@
 	});
 
 	let transition = fadeInDuration > 0 ? `opacity ${fadeInDuration}ms` : undefined;
-
-	$: console.log('showImage', showImage);
 </script>
 
 <IntersectionObserver
