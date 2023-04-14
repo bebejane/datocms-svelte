@@ -6,8 +6,6 @@ export let showImage;
 export let fadeInDuration = 0;
 let transition = fadeInDuration > 0 ? `opacity ${fadeInDuration}ms` : void 0;
 let opacity = showImage ? 1 : 0;
-$:
-  console.log("opacity", opacity, showImage);
 </script>
 
 <img

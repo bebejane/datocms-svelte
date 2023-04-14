@@ -99,8 +99,6 @@ $:
     loaded
   });
 let transition = fadeInDuration > 0 ? `opacity ${fadeInDuration}ms` : void 0;
-$:
-  console.log("showImages", showImage, loaded);
 </script>
 
 <IntersectionObserver
